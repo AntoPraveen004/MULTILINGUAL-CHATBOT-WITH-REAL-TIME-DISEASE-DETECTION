@@ -1,0 +1,156 @@
+/* Detection.css */
+.detection-page {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  .detection-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    margin: 10px 20px;
+    padding: 10px;
+    background: #fadbd8;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .video-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .video-element {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 70vh;
+    background: #000;
+    border-radius: 4px;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .capture-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .capture-button:hover {
+    background-color: #2ecc71;
+    transform: translateY(-2px);
+  }
+  
+  .capture-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .results-section {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .results-title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .result-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detections-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detections-title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .detection-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .detection-item {
+    background: #f8f9fa;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+    border-left: 4px solid #27ae60;
+    transition: all 0.2s ease;
+  }
+  
+  .detection-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loading-message {
+    text-align: center;
+    margin: 20px;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .detection-title {
+      font-size: 1.5rem;
+    }
+    
+    .video-element {
+      max-height: 50vh;
+    }
+    
+    .capture-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+    
+    .detections-section {
+      padding: 15px;
+    }
+  }
